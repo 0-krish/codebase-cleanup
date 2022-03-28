@@ -6,13 +6,7 @@
 #products = products_df.to_dict("records")
 
 import os
-
-def to_usd(my_price):
-    """
-    :param my_price: a number to format in USD
-    :return: the price formatted in USD
-    """
-    return '${:,.2f}'.format(my_price)
+from app.utils import to_usd
 
 # checks to see if a products.csv file exists. If not, it uses the default
 if os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")) == True:
@@ -21,8 +15,6 @@ if os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "data", "product
 else:
     print("USING DEFAULT PRODUCTS CSV FILE...")
     csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "default_products.csv")
-
-
 
 from pandas import read_csv
 
