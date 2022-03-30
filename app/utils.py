@@ -5,6 +5,7 @@ def to_usd(my_price):
     """
     return '${:,.2f}'.format(my_price)
 
+def determine_winner():
 
 if __name__ == "__main__":
     user_input = input("Please choose a price like 4.999: ")
