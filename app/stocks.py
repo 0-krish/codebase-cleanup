@@ -1,9 +1,9 @@
 # stocks.py
 
-print("STOCKS REPORT...")
-
 from app.utils import to_usd
 from alphavantage_service import fetch_stocks_data
+
+print("STOCKS REPORT...")
 
 symbol = input("Please input a crypto symbol (default: 'NFLX'): ") or "NFLX"
 
