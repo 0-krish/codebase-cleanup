@@ -1,6 +1,3 @@
-
-
-
 # this is the requirements.txt file...
 
 # environment variable management via ".env" file approach:
