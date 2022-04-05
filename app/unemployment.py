@@ -1,10 +1,12 @@
 # unemployment.py
 
-print("UNEMPLOYMENT REPORT...")
-
 import os
+from pandas import DataFrame
+from plotly.express import bar
 
 from app.alphavantage_service import fetch_unemployment_data
+
+print("UNEMPLOYMENT REPORT...")
 # docs: https://www.alphavantage.co/documentation/#unemployment
 
 parsed_response = fetch_unemployment_data()
@@ -15,9 +17,6 @@ print(latest) #> {'date': '2022-02-01', 'value': '3.8'}
 #
 # DATA AND CHARTING
 #
-
-from pandas import DataFrame
-from plotly.express import bar
 
 
 df = DataFrame(data)

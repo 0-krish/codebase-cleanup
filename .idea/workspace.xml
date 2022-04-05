@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91a6429b-f9d9-4590-a28d-fea3df1717d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/alphavantage_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/alphavantage_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/crypto.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/crypto.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

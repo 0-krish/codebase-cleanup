@@ -1,9 +1,9 @@
 # crypto.py
 
-print("CRYPTO REPORT...")
-
 from app.utils import to_usd
 from app.alphavantage_service import fetch_crypto_data
+
+print("CRYPTO REPORT...")
 
 symbol = input("Please input a crypto symbol (default: 'BTC'): ") or "BTC"
 parsed_response = fetch_crypto_data(symbol)
