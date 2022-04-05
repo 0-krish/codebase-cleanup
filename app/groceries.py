@@ -1,9 +1,6 @@
+# groceries.py
 
 # READ INVENTORY OF PRODUCTS
-
-# products_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
-# products_df = read_csv(products_filepath)
-# products = products_df.to_dict("records")
 
 import os
 from pandas import read_csv
@@ -11,13 +8,12 @@ import statistics
 from app.utils import to_usd
 
 # checks to see if a products.csv file exists. If not, it uses the default
-if os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")):
+csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
+if os.path.isfile(csv_filepath):
     print("USING CUSTOM PRODUCTS CSV FILE...")
-    csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
 else:
     print("USING DEFAULT PRODUCTS CSV FILE...")
     csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "default_products.csv")
-
 
 # reads the csv file into products variable
 products = read_csv(csv_filepath)
