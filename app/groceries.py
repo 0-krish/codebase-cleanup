@@ -34,6 +34,6 @@ for p in products:
 avg_price = statistics.median(all_prices)
 
 print("---------")
-print("AVERAGE PRICE:", to_usd(p[avg_price]))
+print("AVERAGE PRICE:", to_usd(avg_price))
 
 # EMAIL INVENTORY REPORT
